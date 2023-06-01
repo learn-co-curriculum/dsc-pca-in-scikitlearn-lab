@@ -135,7 +135,9 @@ pd.plotting.scatter_matrix(df, figsize=(10,10));
 ```
 
 
+    
 ![png](index_files/index_6_0.png)
+    
 
 
 - Assign all columns in the following `features` list to `X` 
@@ -392,7 +394,7 @@ Using the target data, we can visualize the principal components according to th
 ```python
 # __SOLUTION__ 
 # Principal Componets scatter plot
-plt.style.use('seaborn-dark')
+plt.style.use('seaborn-v0_8-dark')
 fig = plt.figure(figsize = (10,8))
 ax = fig.add_subplot(1,1,1) 
 ax.set_xlabel('First Principal Component ', fontsize = 15)
@@ -412,7 +414,9 @@ ax.grid()
 ```
 
 
+    
 ![png](index_files/index_23_0.png)
+    
 
 
 ## Explained Variance
@@ -510,9 +514,9 @@ y = result_df['target']
 start = time.time()
 X_train, X_test, Y_train, Y_test = train_test_split(X, y, test_size=0.2, random_state=9)
 model = KNeighborsClassifier()
-model.fit(X_train, Y_train)
-Yhat = model.predict(X_test)
-acc = metrics.accuracy_score(Yhat, Y_test)
+model.fit(X_train.values, Y_train.values)
+Yhat = model.predict(X_test.values)
+acc = metrics.accuracy_score(Yhat, Y_test.values)
 end = time.time()
 print('Accuracy:', acc)
 print ('Time Taken:', end - start)
@@ -584,7 +588,9 @@ plt.title('decision boundary');
 ```
 
 
+    
 ![png](index_files/index_37_0.png)
+    
 
 
 ## Summary 
