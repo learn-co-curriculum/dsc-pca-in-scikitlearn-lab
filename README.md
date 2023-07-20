@@ -100,7 +100,7 @@ Using the target data, we can visualize the principal components according to th
 
 
 ```python
-# Principal Componets scatter plot
+# Principal Components scatter plot
 
 
 # Your code here 
@@ -114,7 +114,7 @@ You can see above that the three classes in the dataset are fairly well separabl
 
 
 ```python
-# Calculate the variance explained by pricipal components
+# Calculate the variance explained by principal components
 print('Variance of each component:', None)
 print('\n Total Variance Explained:', None)
 ```
