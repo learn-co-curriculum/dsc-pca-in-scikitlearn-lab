@@ -383,7 +383,7 @@ Using the target data, we can visualize the principal components according to th
 
 
 ```python
-# Principal Componets scatter plot
+# Principal Components scatter plot
 
 
 # Your code here 
@@ -393,7 +393,7 @@ Using the target data, we can visualize the principal components according to th
 
 ```python
 # __SOLUTION__ 
-# Principal Componets scatter plot
+# Principal Components scatter plot
 plt.style.use('seaborn-v0_8-dark')
 fig = plt.figure(figsize = (10,8))
 ax = fig.add_subplot(1,1,1) 
@@ -426,7 +426,7 @@ You can see above that the three classes in the dataset are fairly well separabl
 
 
 ```python
-# Calculate the variance explained by pricipal components
+# Calculate the variance explained by principal components
 print('Variance of each component:', None)
 print('\n Total Variance Explained:', None)
 ```
